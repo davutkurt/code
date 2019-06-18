@@ -1,1 +1,1 @@
-# internship-at-i2i-System
+# internship at i2i-System
