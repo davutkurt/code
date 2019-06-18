@@ -20,4 +20,4 @@ INSERT INTO intern VALUES(9,'Özgenur','Koç','Trakya','Bilgisayar Mühendisliğ
 INSERT INTO intern VALUES(10,'Ümit','Atilgan','Yildiz Teknik','Matematik Mühendisliği',4,'Çorum');
 INSERT INTO intern VALUES(11,'Beytullah','Atik','Karabük','Bilgisayar Mühendisliği',3,'İstanbul');
 
-select isim,soyisim from intern;
+select first_name,last_name from intern;
