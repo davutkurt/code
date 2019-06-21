@@ -1,0 +1,4 @@
+
+SELECT  HR.EMPLOYEES.employee_id, HR.EMPLOYEES.first_name, HR.DEPARTMENTS.department_name 
+FROM HR.EMPLOYEES JOIN HR.DEPARTMENTS
+ON HR.EMPLOYEES.department_id = HR.DEPARTMENTS.department_id;
