@@ -6,7 +6,7 @@ public class DuplicateNumbers {
 	public void findDuplicateNumbers(int array[]){
 		int i = 0;
 		Set<Integer> notDuplicates = new HashSet<Integer>();
-    	Set<Integer> duplicates = new HashSet<Integer>();
+    		Set<Integer> duplicates = new HashSet<Integer>();
     	
 		for ( i = 0; i<array.length; i++ ) {
     	    if (!notDuplicates.contains(array[i])) {
