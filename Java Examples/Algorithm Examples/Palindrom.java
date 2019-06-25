@@ -29,13 +29,13 @@ public class Palindrom {
 	        if (inputString.charAt(i) != inputString.charAt(length-i-1)){
 	        isPalindrom=false;
 	        }
-	    }
+	     }
 	    
 	    if(isPalindrom)
     		printMessage("This String is a Palindrom String.");
     	else {
     		printMessage("This String is not a Palindrom String.");
-    	}
+    	     }
 	}
 	
 	public static void main(String[] args) {
@@ -50,7 +50,7 @@ public class Palindrom {
 				
 				inputString = scannerInput.nextLine();
 				if(palndrm.checkLength(inputString)) {
-					palndrm.isPalindrom(inputString);
+				palndrm.isPalindrom(inputString);
 				}
 		}
 		while( !inputString.equals("-1"+"") );
