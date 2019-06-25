@@ -12,17 +12,17 @@ public class RepeatedNumber {
 	}
 	private void findRepeatedNumbers(int array[]){
 		int i = 0;
-		Set<Integer> nonRepeated = new HashSet<Integer>();
+	Set<Integer> nonRepeated = new HashSet<Integer>();
     	Set<Integer> repaeted = new HashSet<Integer>();
     	
-		for ( i = 0; i<array.length; i++ ) {
+	for ( i = 0; i<array.length; i++ ) {
     	    if (!nonRepeated.contains(array[i])) {
     	    	nonRepeated .add(array[i]);
     	        continue;
     	    }
     	    repaeted.add(array[i]);
     	}
-		printMessageLine(""+nonRepeated);
+	printMessageLine(""+nonRepeated);
     	if( repaeted.isEmpty() )
     		printMessageLine("There is no Repeated Number number. ");
     	else{
