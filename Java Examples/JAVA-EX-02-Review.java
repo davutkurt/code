@@ -8,25 +8,36 @@ public class PrimeNumbers {
 		System.out.println(print);
 	}
 	
+	public boolean functionMod(int inputNumber, int modValue) {
+		
+		if( inputNumber % modValue == 0 ) {
+			return true;
+		}
+		return false;
+	}
+	
+	public boolean isPrime( int parameter ) {
+		
+		for ( int count=2; count<=(parameter/2); count++ ){
+			
+			if( functionMod(parameter, count) ){
+				return false;	
+			}
+		}
+		
+		return true;
+	}
+	
 	private void findPrimeNumbers(int inputNumber) {
 		
-		boolean isPrime=true;  
-		int count=0;
-		
 		for( int i=2; i<=inputNumber; i++ ){
-			isPrime=true;
-			for (  count=2; count<=(i/2); count++ ){
 			
-				if( i % count == 0 ){
-					isPrime = false;
-					break;
-					}
-				}
-			if ( isPrime ){
-				printMessage(""+ i );
-				}
+			if( isPrime(i) ) {
+				printMessage(""+i);
 			}
+		}
 	}
+	
 	public static void main(String[] args) {
 		Scanner scannerInput = new Scanner(System.in);
 		int inputNumber;
