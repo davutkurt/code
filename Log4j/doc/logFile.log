@@ -1,0 +1,5 @@
+2019-07-07 14:38:31,089 DEBUG [main] - test.pack.Log4j.main 7 -Test mesasge
+2019-07-07 14:40:41,504 DEBUG [main] - test.pack.Log4j.main 12 -Test mesasge
+2019-07-07 14:41:28,970 ERROR [main] - test.pack.Log4j.main 10 -java.lang.Exception: new
+java.lang.Exception: new
+	at test.pack.Log4j.main(Log4j.java:8)
